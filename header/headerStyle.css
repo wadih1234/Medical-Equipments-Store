@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.container .navbar{
+    display: flex;
+    background-color: #4e97fd;
+    justify-content: space-between;
+}
+.navbar img{
+    width:15%;
+    border:2px solid #4e97fd;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+}
+#menu1{
+    display:flex; 
+}
+#menu1{
+    flex:1;
+    margin-left:15px;
+}
+.client-options{
+    position:absolute;
+    top:28px;
+    right:20px;
+    padding:10px;
+    z-index:1;
+    display:none;
+}
+.client-options ul{
+    color:white;
+    background-color:#4e97fd;
+}
+.client-options a{
+    text-decoration: none;
+    color:white;
+}
+.categorie-list{
+    position:absolute;
+    top:41px;
+    left:285px;
+    color:white;
+    background-color:#4e97fd;
+    z-index:1;
+    display:none;
+}
+#menu1 .categorie{
+    border-bottom:1px solid #ffffff;
+}
+#menu1 .categorie-list li {
+border-bottom:1px solid #d3d1d1;
+}
+.client-options li:first-child{
+    border-top:1px solid #ffffff;
+}
+.categorie-list li,.client-options li{
+    list-style-type: none;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:5px;
+    padding-right:5px;
+    transition:all ease 0.5s;
+}
+.categorie-list li:hover,.client-options li:hover{
+    background-color: #2566c2 ;
+}
+#menu1 .icons-mobile{
+    display:none;
+}
+#menu1 li,#menu2 li{
+    list-style: none;
+    padding:10px;
+    transition: 0.5s ease all;
+}
+#menu1 li:hover{
+    background-color: #2566c2;
+}
+#menu1 li a,#menu1 a li
+{
+text-decoration:none;
+color:#fff;    
+}
+
+
+table{
+    border-collapse: collapse;
+}
+table td input{
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    border:1px solid grey;
+    outline:none;
+    padding:5px;
+}
+table td input:focus{
+    border:1px solid #3079df;
+}
+table td button{
+    border:none;
+    padding-left:15px;
+    padding-right:15px;
+    margin-right:20px;
+    color:white;
+    height:29px;
+    cursor: pointer;
+    background-color: #3079df;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+table td a{
+    color:#ffffff;
+    margin-left:5px;
+    margin-right:5px;
+    text-decoration:none;
+}
+table .icon-style{
+    transition: 0.5s ease all;
+}
+table .icon-style:hover{
+    background-color:#2566c2;
+}
+table .icon-style span{
+    color:#ffffff;
+    cursor:pointer;
+    margin-left:3px;
+    margin-right:5px;
+}
+table td i{
+    margin-left:10px;
+}
+
+table td button:hover{
+    background-color: #2566c2;
+}
+.fas{
+color:#ffffff;
+cursor: pointer;
+}
+.mob-btn{
+    display: none;
+}
+
+
+
+.mobile-menu{
+    display:none;
+}
+li{
+    cursor:pointer;
+}
+/* Media (Responsive) */
+@media(max-width:800px){
+    .container .navbar{
+        flex-direction:column;
+    }
+    .navbar img{
+        width:35%;
+        margin:20px;
+        border:none;
+    }
+    .mobile-menu{
+        display:block;
+        color:#ffffff;
+        font-size: 25px;
+        position:absolute;
+        right:10px;
+        cursor:pointer;
+        top:16px;
+    }
+    .navbar #menu1{
+        flex-direction: column;
+        padding:10px;
+    }
+    table td input{
+        margin-left:35px;
+        width:100%;
+    }
+    table {
+        margin-bottom: 10px;
+    }
+    table .icon-style{
+        display:none;
+    }
+    .navbar #menu1 .icons-mobile{
+        display:block;
+    }
+    .navbar #menu1 .icons-mobile{
+        margin-top:15px;
+    }
+    .mob-btn{
+        display:flex;
+        margin:20px;
+    }
+    .mob-btn>div{
+        margin-left:20px;
+        margin-right:10px;
+        color:#ffff;
+    }
+    .mob-btn a{
+        color:#ffff;
+        text-decoration:none;
+    }
+    .navbar #menu1 .icons-mobile span{
+        padding-left:10px;
+    }
+    .navbar #menu1 .categorie-list{
+        margin-top:10px;
+        border-radius:7px;
+        padding:5px;
+    }
+    #menu1 .categorie{
+        border-bottom: none;
+    }
+    .categorie-list li:first-child{
+        border-top:none;
+    }
+    hr{
+        border:1px solid #ffffff;
+    }
+    table{
+        display:block;
+    }
+   
+}
+
+
+

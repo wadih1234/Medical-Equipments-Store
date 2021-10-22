@@ -1,0 +1,96 @@
+body{
+  background-color:#4acbd6 ;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.web-manage-container{
+    background-color:#fff;
+    padding:20px 20px;
+}
+.btn{
+  display:flex;
+  flex-direction: column;
+  position:absolute;
+  top:20px;
+  right:335px;
+}
+.btn .btn-home{
+  width:max-content;
+}
+.orders-table,.messages-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+ .orders-table tr th,.messages-table tr th {
+    background-color: #4acbd6;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+  }
+  .messages-table tr td,.orders-table tr td{
+    text-align: center;
+  }
+  .messages-table th,.orders-table td {
+    padding: 12px 15px;
+  }
+.messages-table  tr,.orders-table  tr {
+    border-bottom: 1px solid #dddddd;
+  }
+.messages-table tr:nth-of-type(even),.orders-table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+.orders-table  tr:last-of-type,.orders-table  tr:last-of-type {
+    border-bottom: 2px solid #4acbd6;
+  }
+input[type="button"],input[type="submit"]{
+    width:81px;
+    height:31px;
+    margin:10px;
+    background-color: white;
+    color:#fff;
+    cursor:pointer;
+    transition:all ease 0.5s;
+}
+input[type="button"]:first-child{
+    background-color:#4acbd6;
+    border:1px solid #4acbd6;
+}
+input[type="button"]:last-child,input[type="submit"]{
+    background-color: #ec2c2c;
+    border:1px solid #ec2c2c;
+}
+input[type="button"]:first-child:hover{
+    background-color: #2566c2;
+    color:#fff;
+}
+input[type="button"]:last-child:hover{
+    background-color: #c01616;
+}
+.messages-details table tr td,.orders-details .orders-table tr td{
+padding:10px 20px;
+}
+hr{
+    border:5px solid #4acbd6;
+  }
+@media(max-width:800px){
+  .web-manage-container {
+      margin-left:150px;
+    }
+    .btn{
+      position: static;
+    }
+    .h-btn{
+      display:flex;
+      flex-direction:row;
+      justify-content: space-around;
+    }
+    .web-manage-container>div,.web-manage-container h1,.web-manage-container p{
+      margin-left:300px;
+    }
+  }

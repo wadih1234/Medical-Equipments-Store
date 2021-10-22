@@ -1,0 +1,95 @@
+.profile-container{
+  margin-bottom:240px;
+}
+h1{
+  text-align:center;
+  font-size: 29px;
+  margin-top:30px;
+}
+.profile-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:50px;
+}
+.profile-container h3{
+  font-size:21px;
+  color:#fff;
+  padding:10px 5px;
+  background-color: #4e97fd;
+}
+.profile-container .profile-item{
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border:1px solid #f1dcdc;
+  margin:30px;
+  width:max-content;
+}
+.profile-container .profile-item .content{
+  padding:40px;
+  background-color: #e1e1e1;
+}
+.info table tr{
+background:#e1e1e1;
+}
+.info table tr:nth-of-type(even){
+background:#e1e1e1
+}
+.info table tr:last-of-type{
+border-bottom:none;
+}
+.orders-history table td,.orders-history table th,.info table td,.info table th,
+.messages table td,.messages table th{
+padding:13px;
+}
+.content div{
+margin:40px;
+}
+.content span{
+margin-left:10px;
+}
+
+.clients-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table tr th {
+  background-color: #4e97fd;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+table tr td{
+  text-align: center;
+}
+.clients-table td {
+  padding: 12px 15px;
+}
+table  tr {
+  border-bottom: 1px solid #dddddd;
+}
+table tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+table  tr:last-of-type {
+  border-bottom: 2px solid #4e97fd;
+}
+/* Responsive */
+@media(max-width:800px){
+  .profile-container{
+      flex-direction: column;
+  }
+  .profile-container .profile-item{
+      width:350px;
+      margin-top:50px;
+  }
+  table th,table td{
+      font-size:13px;
+  }
+}

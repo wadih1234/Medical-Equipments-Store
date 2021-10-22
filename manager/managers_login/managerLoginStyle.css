@@ -1,0 +1,40 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.manager-login-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:2px solid #2566c2;
+    width:500px;
+    margin-top:100px;
+    border-radius:20px;
+}
+table{
+    margin-left:30px;
+}
+table tr td {
+    padding:15px 20px;
+}
+input[type="text"],input[type="password"]{
+    outline:none;
+}
+input[type="submit"],input[type="reset"]{
+    width:85px;
+    height:31px;
+    background-color: #4e97fd;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition:all ease 0.5s;
+    color:white;
+    border:1px solid #4e97fd;
+    border-radius:3px;
+    margin:20px 50px;
+    text-align:center;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+background-color:#2566c2;
+}

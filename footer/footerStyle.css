@@ -1,0 +1,67 @@
+
+.container1{
+    display:flex;
+    justify-content: space-between;
+    margin-right:50px;
+    background-color:#4e97fd;
+    padding:20px;
+    width:100%;
+}
+svg{
+    width:15px;
+    height:15px;
+}
+.list li{
+    list-style-type: none;
+}
+.first ul li,.second ul li a,.third ul li a{
+    color:#ffffff;
+    display:block;
+    text-decoration:none;
+    margin-top:15px;
+    transition:0.5s all ease;
+}
+.list li:hover,.list li a:hover{
+    color:#ffffffa1;
+    cursor:pointer;
+}
+h2{
+    color:#ffffff;
+    font-size:1.2rem;
+}
+.container1 svg{
+    width:15px;
+    height:15px;
+    margin-right:10px;
+}
+.container1 .first>svg,.container1 .second>svg,.container1 .third>svg,hr{
+    display:none;
+}
+
+
+/*Responsive*/
+@media(max-width:768px){
+    .container1{
+        flex-direction: column;
+        padding-left:20px;
+    }
+    .container1>div{
+        margin-top:20px;
+        margin-left:20px;
+    }
+    h2,.container1 .first>svg,.container1 .second>svg,.container1 .third>svg{
+       display:inline-block;
+    }
+    hr,.container1 .first span,.container1 .second .list,.container1 .third .list{
+        display:block;
+    }
+    .container1 .first>svg,.container1 .second>svg,.container1 .third>svg{
+        color:#ffffff;
+        cursor:pointer;
+    }
+    hr{
+        margin-top:15px;
+    }
+   
+
+}
